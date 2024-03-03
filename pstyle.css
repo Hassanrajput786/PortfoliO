@@ -1,0 +1,1400 @@
+/* Home seaction Css */
+
+
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+     font-family: 'Merriweather', serif;
+
+    }
+  
+   
+    #home{
+      width: 100%;
+      height: 60vh;  
+    }
+    .anim{
+      opacity: 0;
+      transform: translateY(1.875rem);
+      animation: moveup 0.5s linear forwards;
+    }
+    .animX{
+      filter: grayscale(1);
+     
+      opacity: 0;
+      transform: translateX(5.625rem);
+      animation: moveleft 0.5s linear forwards;
+    }
+    .animX:hover{
+      transition: all 3s ease;
+      filter: grayscale(0);
+    }
+    @keyframes moveup {
+      100% {
+        opacity: 1;
+        transform: translateY(0rem);
+      }
+    }
+    @keyframes moveleft {
+      100% {
+        opacity: 1;
+        transform: translateX(0rem);
+      }
+    }
+        /*dark mode-css*/
+   .dark-mode{
+    background: black;
+    color:white;
+   }
+   .dark-mode .menu li a{
+    color: white;
+   }
+   .dark-mode .detail{
+    color: white;
+   }
+   .dark-mode .images img{
+    background: black;
+
+-webkit-box-shadow: 0px 20px 0px -10px black, 0px -20px 0px -10px black, 20px 0px 0px -10px black, -20px 0px 0px -10px black, 0px 0px 0px 10px yellow, -11px -26px 0px 3px rgba(25,255,115,0); 
+box-shadow: 0px 20px 0px -10px black, 0px -20px 0px -10px black, 20px 0px 0px -10px black, -20px 0px 0px -10px black, 0px 0px 0px 10px #FF0000, -11px -26px 0px 3px rgba(25,255,115,0);
+   }
+   .dark-mode .title::before{
+    background: white;
+   }
+   .dark-mode .title::after{
+    background: black;
+   }
+   .dark-mode .sright .bars .info span{
+    color: white;
+   
+   }
+    /*dark mode-css*/
+      nav{
+         
+         background: crimson;
+         color: white;
+         position: fixed;
+         top: 0;
+         z-index:1;
+         width: 100%;
+
+      }
+
+      
+     .menu{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+       float: right;
+
+      }
+      .menu li{
+        display: inline-block;
+        padding: .9rem .6rem;
+        margin-top: .3rem;
+
+
+      }
+      .menu li a{
+
+        color: #fff;
+        font-size: 1.2rem;
+        padding: .3rem;
+        font-weight: 400;
+        font-family: georgia;
+      }
+
+      .menu li a:hover{
+        text-decoration: none;
+        color: white;
+        border-radius: .3rem;
+      }
+      #logo:hover{
+        color:white;
+      }
+      #logo{
+   
+        float: left;
+        font-size: 3rem;
+        margin-top: .93rem;
+        font-weight: 900;
+        font-family: time new roman;
+      }
+    .menu-bar i{
+     position: relative;
+    left: 47rem;
+    font-size: 2.5rem;
+    top: 1rem;
+    color: white;
+    display: block;  
+    }
+.detail{
+       animation-delay: 0.2s;
+       margin-top:15rem ;
+       margin-left: 1rem;
+       color: #212121;
+
+      }
+      .detail h2{
+    
+        font-size: 1.25rem;
+      }
+      .detail h1{
+        font-weight: 500;
+       margin-top: 2.5rem;
+        font-size: 2.7rem;
+      }
+  .focus-in-contract-bck {
+  -webkit-animation: focus-in-contract-bck 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+   animation: focus-in-contract-bck 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, g 4s linear infinite;
+}
+
+@-webkit-keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+            transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(12px);
+            transform: translateZ(12px);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+            transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(12px);
+            transform: translateZ(12px);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+ @keyframes g {
+        0% {
+          transform: translateY(0px);
+       
+        }
+        50% {
+          transform: translateY(-0.3125rem);
+         text-shadow: red 2px 2px;
+
+        }
+        100% {
+          transform: translateY(0px);
+       
+        }
+      }
+
+
+      .detail h3{
+       
+        font-size: 2.2rem;
+      }
+      .typing {
+      font-family: 'Arial', sans-serif;
+      font-size: 2.2rem;
+      display: inline-block;
+      color: crimson;
+      font-weight: 700;
+    }
+    .typing2 {
+      font-family: 'Arial', sans-serif;
+      font-size: 2.4rem;
+      display: inline-block;
+      color: crimson;
+      font-weight: 700;
+    }
+      .detail p{
+
+        margin-bottom:2.5rem;
+      }
+    .detail a{
+          animation-delay: 1.3s;
+         background: crimson;
+         border-radius: 2.5rem;
+         border-top-right-radius: 0;
+         padding: .6rem .7rem;
+         text-decoration: none;
+         border: .125rem solid red;
+         color: #fff;
+         font-weight: 700;
+         transition: 0.4s all ease;
+    }
+    .detail a:hover{
+      background: none;
+      border-top-right-radius: 2.5rem;
+      color: crimson;
+    }
+  .detail a:checked{
+    background-image: url(E:\gs.);
+  }
+
+.col-md-8 ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.col-md-8 ul li{
+  margin: 0 5px;
+}
+.col-md-8 ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+.col-md-8 ul li a.active,
+.col-md-8 ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+.col-md-8 .menu-btn i{
+     color: #fff;
+    font-size: 40px;
+    cursor: pointer;   
+     left: 383px;
+     display: none;
+    position: relative;
+    top: 15px;
+
+}
+input[type="checkbox"]{
+  display: none;
+}
+
+@media (max-width: 830px){
+  .col-md-8 .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+    z-index: 1;
+  }
+  .col-md-8 ul{
+    position: fixed;
+    top: 0px;
+    z-index: -1;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+ .toggle-label{
+    visibility: hidden ;
+  }
+  
+  #click:checked ~ ul{
+    left: 0;
+  }
+  .col-md-8 ul li{
+    width: 100%;
+    margin: 35px 0;
+  }
+  .col-md-8 ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 35px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+        margin-top: 2rem;
+  }
+ .col-md-8 ul li a.active,
+  .col-md-8 ul li a:hover{
+    background: none;
+    color: crimson;
+  }
+}
+
+
+     #home span{
+        color: orange;
+        font-weight: 700;
+        font-family: helvatica;
+        font-size: 2.4rem;
+      }
+ 
+      .images{
+        width: 30rem;
+        height: 40rem;
+        position: absolute;
+        bottom: 0;
+        right: 6.25rem;
+        animation-delay: 1.5s;
+      }
+      .images img{
+        object-fit: cover;
+        position: absolute;
+        height: 40rem;
+        width:30rem;
+        bottom: 7rem;      
+        left: 20rem;       
+        transform: translateX(-20rem);
+        transition:left 1s;
+        background-color: white;
+
+-webkit-box-shadow: 0px 20px 0px -10px #FFFFFF, 0px -20px 0px -10px #FFFFFF, 20px 0px 0px -10px #FFFFFF, -20px 0px 0px -10px #FFFFFF, 0px 0px 0px 10px yellow, -11px -26px 0px 3px rgba(25,255,115,0); 
+box-shadow: 0px 20px 0px -10px #FFFFFF, 0px -20px 0px -10px #FFFFFF, 20px 0px 0px -10px #FFFFFF, -20px 0px 0px -10px #FFFFFF, 0px 0px 0px 10px #FF0000, -11px -26px 0px 3px rgba(25,255,115,0);
+    }
+  .images:hover .boy{
+        left: 26rem;
+      }
+
+.shape{
+        filter: transparent;
+}
+     .toggle-btn{
+            display: flex;
+            float: right;
+            width: 5rem;
+            height: 1.8rem;    
+    }
+    .toggle-label{
+         border: .06rem solid red; 
+        width: 4.3rem;
+        height: 2.4rem;
+        background: black;
+        position: relative;
+        border-radius: 100rem;
+        margin-top: 0.93rem;
+    }
+    .toggle-ball{
+        background: white;
+        position: absolute;
+        width: 1.9rem;
+        height: 1.8rem;
+        border-radius: 10rem;
+        top: 0.2rem;
+        left: 0.2rem;
+        transition: 0.3s linear;
+    }
+    #checkbox{
+        visibility: hidden;
+        opacity: 0;
+    }
+    #checkbox:checked + .toggle-label .toggle-ball{
+        transform: translateX(1.8rem);
+        width: 1.9rem;
+        height: 1.9rem;
+        background: black;
+    }
+    #checkbox:checked + .toggle-label{
+        
+        background: white;
+    }
+     :root {
+            --linkedin: #0371ae;
+              --github: #040707;
+    }
+    .social-iconss{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+    }
+    .iconsss{
+        position: relative;
+    left: -19rem;
+    top: -16rem;
+    width: 9.1rem;
+    justify-content: space-between;
+    display: flex;
+    }
+   .iconsss a{
+      position: relative;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 100%;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.2s linear;
+      transition-delay: 0s;
+    }
+   .iconsss i{
+      width: 1.8rem;
+      height: 1.8rem;
+       font-size:2.1rem ;
+       padding: 0 -0.75rem;
+       display: block;
+       color: black;
+
+    }
+   .iconsss a h4{
+      position: absolute;
+      transform: translateY(0px);
+      padding:.3rem .5rem;
+      border-radius: .3rem;
+      color: #fff;
+      visibility: hidden;
+      opacity: 0;
+       transition: 0.3s ease-in-out;
+      transition-delay: 0s;
+      width: 6.9rem;
+      height: 2.4rem;
+      font-size: 1.4rem;
+
+    }
+   .iconsss a h4::before{
+      position: absolute;
+      content: "";
+      border-left: .2rem solid transparent;
+      border-right: .2rem solid transparent;
+      border-top: .2rem solid #fff;
+      bottom: -.0.2rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+.iconsss a.linkedin h4 {
+            background-color: var(--linkedin);
+        }
+
+        a.linkedin h4::before {
+            border-top-color: var(--linkedin);
+        }
+         a.github h4 {
+            background-color: var(--github);
+        }
+
+        a.github h4::before {
+            border-top-color: var(--github);
+        }
+   .iconsss a:hover h4{
+      visibility: visible;
+      opacity: 1;
+      transition: 0.3s all ease-in-out;
+      transition-delay: 0s;
+       transform: translateY(-5rem);
+    }
+        a.linkedin:hover {
+            background-color: var(--linkedin);
+        }
+         a.github:hover {
+            background-color: var(--github);
+        }
+    .iconsss  a:hover i{
+      pointer-events:cursor;
+      color: #fff;
+    }
+    #about {
+
+}
+/* Home seaction Css */
+
+
+
+
+
+/* About us seaction Css */
+    .aboutme{
+      font-family:'helvitca', sans-serif;
+      width: 100%;
+      height: 600px; 
+
+    }
+    .title {
+      font-family: helvatica;
+      font-weight: 700;
+      text-align: center;
+      margin: 3.75rem 1.25rem;
+      font-size: 2.5rem;
+      padding: 3.75rem 0;
+      position: relative;
+    }
+    .title::before{
+      content: ""; 
+      position: absolute;
+      width: 11.25rem;
+      height: .18rem;
+      bottom: 2.9rem;
+      background: black;
+        left: 50%;
+      transform: translateX(-50%);
+    }
+    .title::after{
+      content: "who i am"; 
+      position: absolute;
+      bottom: 1.8rem;
+      font-size: 1.56rem;
+    background: white;
+    padding: .125rem;
+      color: crimson;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+     .column{
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap;
+       align-items: center;
+     }
+       .left img{
+        width: 45%;
+        height:25rem ;
+        width: 25rem;
+        object-fit: cover;
+       position: relative;
+       left: 1.25rem;
+       -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+float: left;
+          }
+          
+      .column .right{
+        width: 55%;
+        font-family: tahoma;
+        font-weight: 500;
+        float: right;
+        margin: 1.8rem 0;
+        position: relative;
+        bottom: 1.87;
+      }
+      .para{
+        font-family:  Dosis ;
+        font-size: 2.18rem;
+        text-align: justify;
+      }
+      .para span {
+        color: crimson;
+        font-family: Didot;
+        font-size: 2.0625rem;
+        font-weight: 700;
+      }
+      .right p{
+        
+        font-size: 1.06rem;
+        line-height: 1.5625rem;
+        text-align: justify;
+        margin-top: 1.875rem;
+        margin-right: 1.25rem;
+        margin-bottom: 3.125rem;
+      }
+      .column a{
+        
+         background: crimson;
+         border-radius: 2.5rem;
+         border-top-right-radius: 0;
+         padding: 0.625rem 0.75rem;
+         text-decoration: none;
+         border: 0.125rem solid red;
+         color: white;
+         font-weight: 700;
+         transition: 0.4s all ease;
+         cursor: pointer;
+      }
+      .column a:hover{
+      background: none;
+      border-top-right-radius: 2.5rem;
+      color: crimson;
+      }
+      /* About us seaction Css */
+
+      /* skill seaction Css */
+
+      .skill{
+        top: 20%;
+        width: 100%;
+        height: 400px;
+
+      }
+       .cskill {
+    position: relative;
+    top: -10rem;
+}
+    .title::after{
+        content: "what i know";
+      }
+      .sleft {
+    position: relative;
+    top: -8rem;
+}
+      .sleft {
+        float: left;
+        width: 40%;
+        position: relative;
+        bottom: -6.125rem;
+        margin: 1.25rem 1.5rem;
+      }
+       
+      .stext{
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin:1.25rem 0.62rem;
+       
+      }
+      .sleft p{
+        line-height: 1.56rem;
+        padding: 0.6rem 0.6rem;
+        text-align: justify;
+        font-size: 0.93rem;
+      }
+      
+      .sleft a {
+        margin: 1.25rem 1.25rem;
+        padding: 0.625rem;
+      }
+       .sright{
+        position: relative;
+        top: 3rem;
+        float: right;
+        width: 45%;
+        margin: 1.25rem 1.5rem;
+      }
+      .sright .bars{
+        font-size: 1.25rem;
+        margin-bottom: 1.56rem;
+       
+      }
+      .sright .info{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .sright .bars .info span{
+        color: black;
+      }
+      .sright .line{
+        position: relative;
+        height: 0.31rem;
+        width: 100%;
+        background: lightgray;
+      }
+      .sright .line::before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: crimson;
+      }
+      .sright .html::before{
+        width: 90%;
+      }
+       .sright .css::before{
+        width: 70%;
+      }
+       .sright .js::before{
+        width: 60%;
+      }
+       .sright .bootstrap::before{
+        width: 80%;
+    }
+   .content {
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  animation-delay: 1.3s;
+         background: crimson;
+         border-radius: 2.5rem;
+         border-top-right-radius: 0;
+         padding: .6rem .7rem;
+         text-decoration: none;
+         border: .125rem solid red;
+         color: #fff;
+         font-weight: 700;
+         transition: 0.4s all ease;
+}
+
+button:hover {
+       background: none;
+       border-top-right-radius: 2.5rem;
+       color: crimson;
+}
+     /* skill seaction Css */
+
+
+       /* Contact us seaction Css */
+       #contact{
+        width: 100%;
+        display: flex;
+      justify-content: center;
+      align-items: center;
+        height: 100vh;
+        margin-bottom: 10%;
+        position: relative;
+        border-radius: 20rem;
+       }
+       
+      .contact .title::after{
+        content: "get in touch";
+      }
+          form {
+      background-color: transparent;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 37.5rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    .username{
+      width: 16.4rem;
+      float: left;
+      margin: 0.8rem 0.5rem;
+    }
+    .email{
+      width: 16.4rem;
+      float: right;
+      margin: 0.8rem 0.5rem;
+    }
+    .subject{
+      margin: 0.8rem 0.5rem;
+    }
+    input {
+      background-color: transparent;
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+     input,
+    textarea {
+      width: 100%;
+      background-color:transparent;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+     resize: none;
+    }
+
+.textarea{
+ margin: 0.8rem 0.5rem;
+}
+
+   .button button {
+       width: 30%;
+        border-radius: 1.87rem;
+        transition: 0.4s all linear;
+        background: crimson;
+         border-top-right-radius: 0;
+         padding:0.6rem 0.7rem;
+         text-decoration: none;
+         border: 0.12rem solid red;
+         color: #fff;
+         font-weight: 700;
+         margin: 0.62rem 0;}
+    .button button:hover {
+     background: none;
+      color: crimson;
+      border-top-right-radius: 2.5rem;
+    }  
+
+.success{
+    margin-top: 30px;
+    color: green;
+} 
+      
+   
+
+        /* Contact us seaction Css */
+
+
+  /* Responsive Desigin Css */
+
+@media only screen and (max-width: 1500px) and (min-width: 1201px) {
+
+html{
+  font-size: 90%;
+}
+.images img {
+    object-fit: cover;
+    position: absolute;
+    height: 28rem;
+    width: 24rem;
+    bottom: 7rem;
+    left: 20rem;
+    transform: translateX(-20rem);
+    transition: left 1s;
+    background-color: white;
+    -webkit-box-shadow: 0px 20px 0px -10px #FFFFFF, 0px -20px 0px -10px #FFFFFF, 20px 0px 0px -10px #FFFFFF, -20px 0px 0px -10px #FFFFFF, 0px 0px 0px 10px yellow, -11px -26px 0px 3px rgba(25,255,115,0);
+    box-shadow: 0px 20px 0px -10px #FFFFFF, 0px -20px 0px -10px #FFFFFF, 20px 0px 0px -10px #FFFFFF, -20px 0px 0px -10px #FFFFFF, 0px 0px 0px 10px #FF0000, -11px -26px 0px 3px rgba(25,255,115,0);
+}
+.images {
+    width: 27rem;
+    height: 40rem;
+    position: absolute;
+    bottom: 0;
+    right: 6.25rem;
+    animation-delay: 1.5s;
+    top: 3rem;
+}
+.iconsss {
+    position: relative;
+    left: -19rem;
+    top: -23rem;}
+.detail {
+    animation-delay: 0.2s;
+    margin-top: 15rem;
+    margin-left: 4rem;
+    color: #212121;
+}
+.cskill {
+    position: relative;
+    top: 0rem;
+}
+.sright {
+    position: relative;
+    top: -18rem;
+}
+.sleft {
+    position: relative;
+    top: -7rem;
+}
+.sright {
+    position: relative;
+    top: -13rem;
+}
+form {
+    position: relative;
+    top: 28rem;
+    left: -5rem;
+}
+#contact {
+    height: 6vh;
+}
+.email {
+    width: 16rem;
+}
+.username {
+    width: 16rem;
+}
+.ccontact {
+    position: relative;
+   left: 19rem;
+}
+.contact .title::after {
+    content: "get in touch";
+    width: 9rem;
+}
+
+    }
+
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+
+html{
+  font-size: 90%;
+}
+.iconsss {
+    top: -20rem;
+    position: relative;
+    left: -13rem;
+}
+.title {
+    position: relative;
+    top: -14rem;
+}
+.column {
+    position: relative;
+    top: -7rem;
+}
+.images img {
+    object-fit: cover;
+    position: absolute;
+    height: 28rem;
+    width: 24rem;
+    bottom: 7rem;
+    left: 20rem;
+    transform: translateX(-20rem);
+    transition: left 1s;
+    background-color: white;
+    -webkit-box-shadow: 0px 20px 0px -10px #FFFFFF, 0px -20px 0px -10px #FFFFFF, 20px 0px 0px -10px #FFFFFF, -20px 0px 0px -10px #FFFFFF, 0px 0px 0px 10px yellow, -11px -26px 0px 3px rgba(25,255,115,0);
+    box-shadow: 0px 20px 0px -10px #FFFFFF, 0px -20px 0px -10px #FFFFFF, 20px 0px 0px -10px #FFFFFF, -20px 0px 0px -10px #FFFFFF, 0px 0px 0px 10px #FF0000, -11px -26px 0px 3px rgba(25,255,115,0);
+}
+.images {
+    width: 27rem;
+    height: 40rem;
+    position: absolute;
+    bottom: 0;
+    right: 6.25rem;
+    animation-delay: 1.5s;
+    top: 3rem;
+}
+.detail {
+    animation-delay: 0.2s;
+    margin-top: 15rem;
+    margin-left: 4rem;
+    color: #212121;
+}
+.sright {
+    position: relative;
+    top: -18rem;
+}
+.sleft {
+    position: relative;
+    top: -13rem;
+}
+.sright {
+    position: relative;
+    top: -17rem;
+}
+.title {
+    position: relative;
+    top: -12rem;
+}
+#contact {
+    height: 2vh;
+}
+form {
+    position: relative;
+    top: 28rem;
+    left: -5rem;
+}
+.email {
+    width: 16rem;
+}
+.username {
+    width: 16rem;
+}
+.ccontact {
+    position: relative;
+    left: 19rem;
+    top: 1rem;
+}
+.contact .title::after {
+    content: "get in touch";
+    width: 9rem;
+}
+.column .right {
+    width: 50%;
+    position: relative;
+    left: -7rem;
+}
+    }
+
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+
+html{
+  font-size: 70%;
+}
+.iconsss {
+    top: -25rem;
+}
+#home {
+    width: 100%;
+    height: 33vh;
+}
+.aboutme {
+    width: 100%;
+    height: 300px;
+}
+.sright {
+    position: relative;
+    top: 1rem;
+}
+.fa-bars:before, .fa-navicon:before {
+    content: "\f0c9";
+    position: relative;
+    top: -1rem;
+}
+.images img {
+    object-fit: cover;
+    position: absolute;
+    height: 28rem;
+    width: 24rem;
+    bottom: 7rem;
+    left: 20rem;
+    transform: translateX(-20rem);
+    transition: left 1s;
+    background-color: white;
+    -webkit-box-shadow: 0px 20px 0px -10px #FFFFFF, 0px -20px 0px -10px #FFFFFF, 20px 0px 0px -10px #FFFFFF, -20px 0px 0px -10px #FFFFFF, 0px 0px 0px 10px yellow, -11px -26px 0px 3px rgba(25,255,115,0);
+    box-shadow: 0px 20px 0px -10px #FFFFFF, 0px -20px 0px -10px #FFFFFF, 20px 0px 0px -10px #FFFFFF, -20px 0px 0px -10px #FFFFFF, 0px 0px 0px 10px #FF0000, -11px -26px 0px 3px rgba(25,255,115,0);
+}
+.images {
+    width: 25rem;
+    height: 40rem;
+    position: absolute;
+    bottom: 0;
+    right: 6.25rem;
+    animation-delay: 1.5s;
+    top: 3rem;
+}
+.detail {
+    animation-delay: 0.2s;
+    margin-top: 15rem;
+    margin-left: 4rem;
+    color: #212121;
+}
+.cskill {
+    position: relative;
+    top: 17rem;
+}
+.sleft {
+    position: relative;
+    top: 12rem;
+}
+.sright {
+    position: relative;
+    top: -1rem;
+}
+form {
+    position: relative;
+    top: 28rem;
+    left: -5rem;
+}
+.email {
+    width: 15rem;
+}
+.username {
+    width: 15rem;
+}
+.ccontact {
+    position: relative;
+    left: 19rem;
+}
+.contact .title::after {
+    content: "get in touch";
+    width: 9rem;
+}
+#contact {
+    height: 38vh;
+}
+
+    }
+
+
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+html{
+  font-size: 62%;
+}
+.aboutme {
+    font-family: 'helvitca', sans-serif;
+    width: 100%;
+    height: 262px;
+}
+#logo {
+    position: relative;
+    top: 3rem;
+    left: 3rem;
+}
+nav {
+    position: fixed;
+    top: -2rem;
+}
+.fa-bars:before, .fa-navicon:before {
+    content: "\f0c9";
+    position: relative;
+    top: -3rem;
+    left: 4rem;
+}
+.iconsss {
+    position: relative;
+    left: -6rem;
+    top: -30rem;
+  }
+.images img {
+    object-fit: cover;
+    position: absolute;
+    height: 25rem;
+    width: 20rem;
+    bottom: 7rem;
+    left: 20rem;
+    transform: translateX(-20rem);
+    transition: left 1s;
+    background-color: white;
+    -webkit-box-shadow: 0px 20px 0px -10px #FFFFFF, 0px -20px 0px -10px #FFFFFF, 20px 0px 0px -10px #FFFFFF, -20px 0px 0px -10px #FFFFFF, 0px 0px 0px 10px yellow, -11px -26px 0px 3px rgba(25,255,115,0);
+    box-shadow: 0px 20px 0px -10px #FFFFFF, 0px -20px 0px -10px #FFFFFF, 20px 0px 0px -10px #FFFFFF, -20px 0px 0px -10px #FFFFFF, 0px 0px 0px 10px #FF0000, -11px -26px 0px 3px rgba(25,255,115,0);
+}
+.images {
+    width: 19rem;
+    height: 40rem;
+    position: absolute;
+    bottom: 0;
+    right: 6.25rem;
+    animation-delay: 1.5s;
+    top: 3rem;
+}
+.iconsss {
+    position: relative;
+    left: -9rem;
+    top: -43rem;
+    width: 9.1rem;
+    justify-content: space-between;
+    display: flex;
+}
+#home {
+    width: 100%;
+    height: 280px;
+}
+.para {
+    font-family: Dosis;
+    font-size: 2rem;
+    text-align: justify;
+}
+.detail {
+    animation-delay: 0.2s;
+    margin-top: 15rem;
+    margin-left: 3rem;
+    color: #212121;
+}
+.left img {
+    width: 45%;
+    height: 20rem;
+    width: 20rem;
+}
+.para {
+    font-family: Dosis;
+    font-size: 1.8rem;
+    text-align: justify;
+}
+.typing2{
+  font-size: 1.8rem;
+}
+.cskill {
+    position: relative;
+    top: 17rem;
+}
+.skill {
+    top: 20%;
+    width: 100%;
+    height: 300px;
+}
+.sleft {
+    position: relative;
+    top: 12rem;
+}
+.sright {
+    position: relative;
+    top: 7rem;
+}
+form {
+    position: relative;
+    top: 28rem;
+    left: -5rem;
+}
+.email {
+    width: 15rem;
+}
+.username {
+    width: 15rem;
+}
+.ccontact {
+    position: relative;
+    left: 20rem;
+}
+.contact .title::after {
+    content: "get in touch";
+    width: 9rem;
+}
+#contact {
+    height: 42vh;
+}
+
+    }
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+
+html{
+  font-size: 48%;
+}
+.social-iconss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    left: 6rem;
+    position: relative;
+}
+#home {
+    width: 100%;
+    height: 25vh;
+}
+.cskill {
+    position: relative;
+    top: -10rem;
+}
+#logo {
+    top: 3rem;
+
+    position: relative;
+}
+.images img {
+  display: none;
+}
+.detail {
+    animation-delay: 0.2s;
+    margin-top: 15rem;
+    margin-left: 3rem;
+    color: #212121;
+}
+.left img {
+    width: 45%;
+    height: 28rem;
+    width: 30rem;
+    position: relative;
+}
+.column {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+}
+.stext {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 1.25rem 5.5rem;
+}
+.column .right {
+    width: 90%;
+    font-family: tahoma;
+    font-weight: 500;
+    /* float: right; */
+    margin: auto;
+    position: relative;
+    top: 4rem;
+}
+.content {
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    left: 4rem;
+    position: relative;
+}
+.typing2{
+  font-size: 2rem;
+}
+.cskill {
+    position: relative;
+    top: -8rem;
+}
+.sleft {
+    position: relative;
+    top: -12rem;
+    width: 92%;
+}
+.sright {
+    position: relative;
+    top: -15rem;
+    width: 90%;
+}
+form {
+    position: relative;
+    top: 28rem;
+    left: -5rem;
+}
+.email {
+   max-width: 14.3rem;
+}
+.username {
+    max-width: 14.3rem;
+}
+.ccontact {
+    position: relative;
+    left: 16rem;
+}
+.contact .title::after {
+    content: "get in touch";
+    width: 9rem;
+}
+.fa-bars:before, .fa-navicon:before {
+    content: "\f0c9";
+    position: relative;
+    top: -4rem;
+    left: -2rem;
+}
+#contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0vh;
+    margin-bottom: 10%;
+    position: relative;
+    border-radius: 20rem;
+}
+.iconsss {
+    position: relative;
+    left: -8rem;
+    top: -12rem;
+    width: 9.1rem;
+    justify-content: space-between;
+    display: flex;
+}
+    }
+
+
+@media only screen and (max-width: 440px) and (min-width: 369px) { 
+.fa-bars:before, .fa-navicon:before {
+    content: "\f0c9";
+    position: relative;
+    top: -4rem;
+    left: -9rem;
+}
+}
+
+
+@media only screen and (max-width: 370px) and (min-width: 320px) {
+.email {
+   max-width: 11rem;
+}
+.username {
+    max-width: 11rem;
+}  
+.fa-bars:before, .fa-navicon:before {
+    content: "\f0c9";
+    position: relative;
+    top: -4rem;
+    left: -16rem;
+}
+}
+@media only screen and (max-width: 530px) and (min-width: 480px) {
+.images img{
+  display: none;
+}
+}
+
+#body{
+  max-width: 1500px;
+  margin: auto;
+}
+
